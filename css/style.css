@@ -241,7 +241,6 @@ body {
   margin-top: -15rem; }
   @media (max-width: 56.25em) {
     .section-features {
-      background-image: url(../img/gif6.gif);
       background-size: 150%; } }
 
 .section-tours {
