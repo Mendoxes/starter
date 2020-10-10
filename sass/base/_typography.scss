@@ -1,0 +1,114 @@
+
+.heading-primary{
+color: $color-white;
+text-transform: uppercase;
+text-align: center;
+backface-visibility: hidden; /* animacja nie bedzie szejki dzieki temu */
+margin-bottom: 1.5rem;
+
+
+
+
+&--main{
+
+display: block;
+font-size: 8rem;
+font-weight: 400;
+letter-spacing: 3.5rem;
+
+animation-name: moveInLeft;
+animation-duration: 2s;
+animation-timing-function: ease-out; /* malo wazne, ale warto miec */
+
+@include respond(phone){
+
+    letter-spacing: 1rem;
+  font-size: 5rem;}
+
+}
+
+&--sub{
+display: block;
+font-size: 2rem;
+font-weight: 700;
+letter-spacing: 1.75rem;
+animation-name: moveInRight;
+animation-duration: 2s;
+@include respond(phone){
+
+    letter-spacing: .5rem;
+}
+
+}
+}
+
+.heading-tertiary{
+font-size:$default-font-size;
+font-weight: 700;
+text-transform: uppercase;
+
+}
+.paragraph{
+font-size: 1.6rem;
+
+
+&:not(:last-child){
+  margin-bottom: 3rem;
+}
+
+
+}
+
+
+.heading-secondery{
+
+  font-size: 3.5rem;
+  text-transform: uppercase;
+  font-weight:  700;
+  background-image: linear-gradient(to right, $color-primary-light, $color-primary);
+display: inline-block;
+-webkit-background-clip:text; //backround znajduje sie tylko za tekstem!
+color:transparent; // jako ze backgroiund znajduje sie tylko za textem, to kiedy robimy text transparent to mamy iluzje ze text jest pokolorowany a tak naprawde to jest background ktory sie znajdowal pod textem ktory teraz jest niewidzialny
+letter-spacing: .2rem;
+transition: all .2s;
+
+@include respond(tab-port){
+
+font-size:2.5rem;
+
+}
+
+@include respond(phone){
+
+font-size:2rem;
+
+}
+
+
+&:hover{
+transform: skewY(2deg) skewX(15deg) scale(1.1);
+text-shadow: .5rem 1rem 2rem rgba($color-black, 2);
+
+
+}
+}
+
+
+
+.heading-4{
+
+  font-size: 3.5rem;
+  text-transform: uppercase;
+  font-weight:  700;
+  background-image: linear-gradient(to right, $color-secondary-light, $color-secondary-dark);
+display: inline-block;
+-webkit-background-clip:text; //backround znajduje sie tylko za tekstem!
+color:transparent; // jako ze backgroiund znajduje sie tylko za textem, to kiedy robimy text transparent to mamy iluzje ze text jest pokolorowany a tak naprawde to jest background ktory sie znajdowal pod textem ktory teraz jest niewidzialny
+letter-spacing: .2rem;
+transition: all .2s;
+&:hover{
+transform: skewY(2deg) skewX(15deg) scale(1.1);
+text-shadow: .5rem 1rem 2rem rgba($color-black, 2);
+
+}
+}

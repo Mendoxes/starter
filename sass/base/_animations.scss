@@ -1,0 +1,141 @@
+@keyframes moveInLeft {
+  0%{
+    opacity: 0;
+    transform: translateX(-10rem);
+    color:$color-primary-dark;
+  }
+
+
+  100%{
+opacity: 1;
+transform: translate(0);
+
+  }
+
+  60%{
+transform: translateX(7rem);
+color:$color-primary;
+  }
+}
+
+@keyframes moveInRight {
+  0%{
+    opacity: 0;
+    transform: translateX(10rem);
+    color:$color-primary-dark;
+  }
+
+  60%{
+    opacity:1;
+transform: translateX(-7rem);
+color:$color-primary;
+
+  }
+  100%{
+opacity: 1;
+transform: translate(0);
+
+  }
+}
+
+
+@keyframes moveInBottom {
+  0%{
+    opacity: 0;
+    transform: translateY(10rem);
+    color:$color-primary-dark;
+  }
+
+  60%{
+transform: translateY(-1rem);
+color:$color-primary;
+  }
+  100%{
+opacity: 1;
+transform: translate(0);
+
+}}
+
+
+
+@keyframes fade-in {
+    from {opacity: 0; transform: scale(.7,.7)}
+    to {opacity: 1;}}
+
+    @keyframes clip {
+0%{clip-path:polygon(0 0,100% 0,100% 100vh, 0 100%)}
+
+50%{clip-path:polygon(0 0,100% 0,100% 85vh, 0 100%)}
+      100%{clip-path:polygon(0 0,100% 0,100% 75vh, 0 100%)}
+    }
+
+
+    .fade-in-element4 {
+      animation-delay: 13.2s;
+      animation: fade-in 2.4s;
+
+    }
+
+    .fade-in-element5 {
+      animation-delay: 1.2s;
+      animation: clip 5.4s;
+      animation-fill-mode: forwards;
+
+      @include respond(phone){
+animation:none;
+          animation-fill-mode: none;
+      }
+
+    }
+
+
+.fade-in-element1 {
+  animation: fade-in 2.4s;}
+
+
+.fade-in-element2 {
+  animation: fade-in 4.4s;
+}
+
+.fade-in-element3 {
+  animation: fade-in 6.4s;}
+
+
+.hidden1 {
+  opacity: 0;
+}
+
+.hidden2 {
+  opacity: 0;
+}
+
+
+.hidden3 {
+  opacity: 0;}
+
+  .hidden4 {
+    opacity: 0;}
+
+    .hidden5 {
+      opacity: 1;}
+
+
+
+
+      @keyframes catapp {
+
+    33%{
+
+      transform:  translateY(2rem);
+
+    }
+
+
+
+    100%{
+
+        transform:  translateY(0)
+
+    }
+
+      }

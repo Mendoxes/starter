@@ -1,0 +1,52 @@
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+box-sizing: inherit;
+}
+
+html {
+font-size: 62.5%;  /* 16 podzielic przez 10 pixeli */
+
+//1 rem = 10 px
+
+
+
+
+      @include respond(tab-land){
+
+          font-size: 56.25%;  // 1 rem = 9px , 8/16 = 56.25%
+        }
+
+        @include respond(tab-port){
+
+            font-size: 50%;   // 1 rem = 8px , 8/16 = 50%
+          }
+
+          // @include respond(phone){
+          //
+          //     font-size: 30%;
+          //   }
+
+        @include respond(big-desktop){
+
+            font-size: 75%; //1rem = 12pix , 12/16
+          }
+}
+body {
+font-family: "Lato", sans-serif;
+font-weight: 400;
+font-size: 1.6rem;
+line-height: 1.7;
+color: $color-gray-dark;
+padding: 3rem;
+box-sizing: border-box;
+transition: all 3s;
+
+@include respond(tab-port){
+
+    padding:0;  }
+ 
+}

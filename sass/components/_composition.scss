@@ -1,0 +1,41 @@
+.composition {
+position: relative;
+  &__photo{
+width: 55%; // zawsze jesli o img chodzi w procentach chpodzi o viewport
+box-shadow: 0 1.5rem 4rem rgba($color-black, .4);
+border-radius: .2rem;
+position: absolute;
+z-index: 10;
+transition: all .2s;
+// outline-offset: 2rem;
+&--p1{
+left: 2rem;
+top:1rem
+
+}
+
+&--p2{
+right: -2rem;
+top:6rem;
+
+}
+
+&--p3{
+left: 20%;
+top: 17rem
+
+}
+
+&:hover{
+// outline: 1.5rem solid $color-primary;
+  transform: scale(1.5) translateY(-2rem);
+  box-shadow: 0 3.5rem 4rem rgba($color-black, .7);
+  z-index: 20;
+}
+  }
+&:hover &__photo:not(:hover){
+
+//composition:hover composition__photo:not(:hover);
+margin:2rem;
+}
+}
