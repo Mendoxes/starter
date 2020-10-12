@@ -30,7 +30,7 @@ clear:both;
 }
 
 @if $breakepoint == tab-port {
-@media (max-width:  56.25em) {  @content };
+@media (max-width:  66.25em) {  @content };
 
 }
 

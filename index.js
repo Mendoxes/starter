@@ -130,12 +130,12 @@ $("#blackcat").removeClass("test2");
 //   console.log("dupa");
 //    window.scroll(0,1800);
 
-document.addEventListener('keydown', logKey);
-
-function logKey(e) {
-  console.log("dupa");
-  window.scrollBy(0, 800);
-}
+// document.addEventListener('keydown', logKey);
+//
+// function logKey(e) {
+//   console.log("dupa");
+//   window.scrollBy(0, 800);
+// }
 
 
 var h= 0;

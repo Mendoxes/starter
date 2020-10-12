@@ -122,7 +122,18 @@ transition: .4s;
   &__left{
 width: 33.33333333%;
 display:table-cell;
-  }
+
+@include respond(tab-port)
+
+{
+
+	width: 49%;
+
+			display: inline-flex;
+
+}
+
+	}
 
   &__right{
 width: 66.6666667%;
@@ -130,14 +141,29 @@ display:table-cell;
 vertical-align: middle;
 text-align: center;
 padding: 3rem 5rem;
-  }
+
+@include respond(tab-port)
+
+{
+
+display: table-row;
+}
+
+	}
 
   &__img{
 display:block;
 width: 100%;
+@include respond(tab-port)
 
+{
 
-  }
+	:not(last-child){
+
+			margin-right:  1rem;
+}
+
+}}
 
 
   &__text{
@@ -156,6 +182,17 @@ column-rule: 1px solid grey;
 -moz-hyphens:auto;
 -webkit-hyphens:auto;
 hyphens: auto;
+@include respond(phone)
+
+{
+
+
+
+			margin:  2rem;
+column-count:1;
+
+  }
+
 
 }
 }
