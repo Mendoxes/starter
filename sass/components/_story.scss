@@ -11,6 +11,21 @@ border:solid;
 border-color: #fb8100 #f10505 #f14444 #c77725;
 border-width: .5rem;
 
+@include respond(tab-port)
+{
+width: 100%;
+padding: 4rem;
+padding-left: 7rem;
+
+}
+
+@include respond(phone)
+{
+transform: skewX(0);
+
+}
+
+
 &>*{
 
 
@@ -26,6 +41,12 @@ clip-path: circle(50.4% at 50% 50%);
 transform: translateX(-3rem) skewX(12deg);
 position: relative;
 
+@include respond(phone)
+{
+transform: translateX(-3rem) skewX(0);
+
+}
+
 }
 
 &__img{
@@ -40,6 +61,12 @@ transition: all .2s;
 &__text {
   transform: skewX(12deg);
   text-align: center;
+
+  @include respond(phone)
+  {
+  transform: skewX(0);
+
+  }
 
 }
 

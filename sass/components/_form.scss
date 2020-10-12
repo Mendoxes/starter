@@ -21,6 +21,26 @@ background-color: $color-white;
 transition: .3s;
 
 
+@include respond(tab-land)
+{
+
+  width: 50%;
+}
+
+
+@include respond(tab-port)
+{
+
+  width: 86%;
+}
+
+@include respond(phone)
+{
+
+  width: 100%;
+}
+
+
 &::placeholder{
   color:$color-primary-light !important;
 
@@ -80,8 +100,12 @@ transform:translateY(-4rem)
 
 &__radio-group {
 
-  width: 40%;
+  width: 20%;
   display: inline-block;
+text-align: center;
+
+
+
 
 }
 &__radio-label {
