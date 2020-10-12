@@ -48,5 +48,11 @@ transition: all 3s;
 @include respond(tab-port){
 
     padding:0;  }
- 
+
+}
+
+::selection{
+
+  background-color:#8a48b7;
+  color:white;
 }

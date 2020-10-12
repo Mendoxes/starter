@@ -12,7 +12,8 @@ function myFunction() {
 
 $(document).ready(function() {
   $(window).scroll(function() {
-    if ($(document).scrollTop() > 800) {
+    if ($(document).scrollTop() > 800
+  ) {
       $("#blackcat").addClass("test");
     $("#blackcat").removeClass("test2");}
 
